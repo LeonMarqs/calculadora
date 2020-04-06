@@ -81,20 +81,23 @@
             if (val === '+' || val === '-' || val === '*' || val === '/' || val === '.') {
 
               document.getElementById('resultado').value += val;
-            };
+              
+              };
 
             if (val === '=') {
 
               //eval = retorna o resultado da string
               let valor_campo = eval(document.getElementById('resultado').value);
               document.getElementById('resultado').value = valor_campo;
-            }
-            
-            } else if (tipo === 'valor') {
-          
-              document.getElementById('resultado').value += val;
+              };
+              
+          }else if (tipo === 'valor') {
+            document.getElementById('resultado').value += val;
             };
         }
+
+
+
 
       </script>
 
